@@ -10,7 +10,7 @@ const Contact = ()=>{
 
   const handleSendMessage = async(e)=>{
     e.preventDefault();
-    await axios.post("http://localhost:4000/api/v1/message/send", {name , email , subject , message},
+    await axios.post("https://event-planner-gk4i.onrender.com/api/v1/message/send", {name , email , subject , message},
     {
       withCredentials : true,
       headers :{"Content-Type": "Application/json"}
