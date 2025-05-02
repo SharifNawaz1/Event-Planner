@@ -11,7 +11,7 @@ const app = express();
 dotenv.config({path: "./config/config.env"})
 
 app.use(cors({
-    origin:[process.env.FRONTEND_URL],
+    origin:["https://event-planner-1-7zor.onrender.com/"],
     methods:["POST"],
     credentials: true
 }))
